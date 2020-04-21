@@ -1,13 +1,13 @@
 [
     {
         "Hakuaika p\u00e4\u00e4ttyy": "Improvement", 
-        "Ilmoitan": "Virbi Is an", 
+        "Ilmoitan": "Virbi Is a", 
         "Ilmoituksen otsikko": "VIRBI", 
         "Kuvaus teht\u00e4v\u00e4st\u00e4": [
-            "tein t\u00e4llasen :D kaavittu t\u00e4\u00e4lt\u00e4 <a href='http://www.cc.puv.fi/~arsj/Rekrypankkiexcel.htm' target='_blank'>http://www.cc.puv.fi/~arsj/Rekrypankkiexcel.htm</a> pythonilla (requests ja beautifulsoup) :D oikeelta l\u00f6ytyy teemanappi (y\u00f6 (v\u00e4h\u00e4 niinku se b\u00e4ndi :D) tai lumisokeus) :D frontissa esintyy my\u00f6s jquery + axios :D"
+            "Data kaavittu VAMKin Rekrypankista: http://www.cc.puv.fi/~arsj/Rekrypankkiexcel.htm Scraper toteutettu Pythonin Requests ja BeautifulSoup-kirjastoilla, front-endiss\u00e4 taas esiintyy jQuery ja axios."
         ], 
         "Ohjeet hakemiseen ja  lis\u00e4tietojen antaja": "P\u00e4ivitetty viimeksi", 
-        "Vaatimukset hakijalle": "Apr 18 2020", 
+        "Vaatimukset hakijalle": "Apr 21 2020", 
         "Yritys/organisaatio": "Recruitment Bank"
     }, 
     {

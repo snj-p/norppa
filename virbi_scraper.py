@@ -23,10 +23,10 @@ data = []
 headers = []
 output = []
 
-introtext = ["tein tällasen :D kaavittu täältä <a href='http://www.cc.puv.fi/~arsj/Rekrypankkiexcel.htm' target='_blank'>http://www.cc.puv.fi/~arsj/Rekrypankkiexcel.htm</a> pythonilla (requests ja beautifulsoup) :D oikeelta löytyy teemanappi (yö (vähä niinku se bändi :D) tai lumisokeus) :D frontissa esintyy myös jquery + axios :D"]
+introtext = ["Data kaavittu VAMKin Rekrypankista: http://www.cc.puv.fi/~arsj/Rekrypankkiexcel.htm Scraper toteutettu Pythonin Requests ja BeautifulSoup-kirjastoilla, front-endissä taas esiintyy jQuery ja axios."]
 timestamp = datetime.now()
 timestampstr = timestamp.strftime("%b %d %Y")
-intro = [["Virbi Is an", "Recruitment Bank", "VIRBI", introtext , timestampstr, "Päivitetty viimeksi", "Improvement"]]
+intro = [["Virbi Is a", "Recruitment Bank", "VIRBI", introtext , timestampstr, "Päivitetty viimeksi", "Improvement"]]
 
 get_data(header_rows, headers)
 get_data(rows, data)
