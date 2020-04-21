@@ -1,0 +1,153 @@
+@media only screen and (max-width: 600px) {
+    div#previews {
+        width: 100%;
+        border: none;
+    }
+    div#wrap {
+        width: 100%;
+    }
+    div#display {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        display: none;
+    }
+}
+
+html {
+    font-family: 'Rubik';
+    color: #eee;
+}
+
+body {
+    margin: 0;
+    background-color: #222831;
+}
+
+    .light_blue {
+        background-color: #d6e5fa !important;
+        color: #222831 !important;
+    }
+
+    .light {
+        background-color: #fffdf9 !important;
+        color: #222831;
+    }
+
+    .light_title {
+        color: #222831 !important;
+    }
+
+
+
+    .light_button {
+        background-color: #d6e5fa !important;
+    }
+
+p {
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+}
+
+h4.preview_title {
+    color: #00aaff;
+    font-weight: 700;
+}
+
+h2 {
+    color: #00aaff;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 24pt;
+}
+
+
+#wrap {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #222831;
+}
+
+#previews {
+    width: 35%;
+}
+
+div.preview_item {
+    padding: 1.5em 0 1.5em 1em;
+}
+
+div.preview_item>p {
+    margin-top: .5em;
+    font-style: italic;
+
+}
+
+div.preview_item:hover {
+    background-color: #0070a8 !important;
+    cursor: pointer;
+}
+
+div.preview_item:nth-child(even) {
+    background-color: #393e46;
+}
+
+#display {
+    width: 55%;
+    padding: 1em;
+    box-sizing: border-box;
+    position: fixed;
+    left: 38%;
+    overflow-y: scroll;
+    height: 100%;
+    background-color: #222831;
+    -webkit-overflow-scrolling:touch;
+}
+
+.close, #theme {
+    float: right;
+    background-color: #222831;
+    border: none;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    height: 2em;
+    width: 2em;
+}
+
+.close:after {
+    content: "\00d7";
+    display: inline-block;
+}
+
+.close:hover {
+    background-color: #0070a8;
+}
+
+#theme {
+    width: auto;
+    font-weight: 700;
+    font-size: 24pt;
+}
+
+#theme:hover {
+    background-color: #0070a8;
+}
+
+#theme:after {
+    content: "\2600";
+}
+
+a {
+    color: #ccedd2;
+}
+a:visited {
+    color: #94d3ac;
+}
