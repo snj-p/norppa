@@ -23,20 +23,9 @@ function main() {
         })
         .catch(function (error) {
             console.log(error.response.status);
-        })
-        .then(function() {
-            $('button#theme').on('click', swap_themes);
         });
 }
 
-function swap_themes() {
-    $('body').toggleClass('light_body');
-    $('#display').toggleClass('light');
-    $('#wrap').toggleClass('light');
-    $('.preview_item:nth-child(even)').toggleClass('light_blue');
-    $('.preview_title').toggleClass('light_title');
-    $('#previews').toggleClass('light_previews');
-}
 
 function format_previews(res, output) {
     for (i in res) {
@@ -51,7 +40,7 @@ function format_previews(res, output) {
 }
 
 function format_display(res, output, index) {
-    let item = '<button class="close"></button>';
+    let item = '<div id="align_hack"><button class="close"></button></div>';
         item += "<h2>" + res[index]["Ilmoituksen otsikko"] + "</h2>";
         item += "<h4>" + res[index]["Ilmoitan"] + " &mdash; ";
         item += res[index]["Yritys/organisaatio"] + " &mdash; ";

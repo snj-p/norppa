@@ -24,24 +24,6 @@ body {
     background-color: #181c22;
 }
 
-    .light_blue {
-        background-color: #d6e5fa !important;
-        color: #222831 !important;
-    }
-
-    .light {
-        background-color: #fffdf9 !important;
-        color: #222831;
-    }
-
-    .light_title {
-        color: #222831 !important;
-    }
-
-    .light_body {
-        background-color: #bfd7f7 !important;
-    }
-
 p {
     margin: 0;
 }
@@ -57,8 +39,6 @@ h4.preview_title {
 
 h2 {
     color: #00aaff;
-    font-weight: 900;
-    font-style: italic;
     text-transform: uppercase;
     font-size: 24pt;
 }
@@ -81,7 +61,6 @@ div.preview_item {
 div.preview_item>p {
     margin-top: .5em;
     font-style: italic;
-
 }
 
 div.preview_item:hover {
@@ -105,8 +84,11 @@ div.preview_item:nth-child(even) {
     -webkit-overflow-scrolling:touch;
 }
 
-.close, #theme {
-    float: right;
+#align_hack {
+    text-align: right;
+}
+
+.close {
     background-color: #00aaff;
     border: none;
     color: #fff;
@@ -128,25 +110,20 @@ div.preview_item:nth-child(even) {
     background-color: #0070a8;
 }
 
-#theme {
-    position: fixed;
-    right: 0;
-    width: auto;
-    font-weight: 700;
-    font-size: 24pt;
-}
-
-#theme:hover {
-    background-color: #0070a8;
-}
-
-#theme:after {
-    content: "\2600";
-}
-
 a {
     color: #ccedd2;
 }
 a:visited {
     color: #94d3ac;
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+::-webkit-scrollbar-track {
+    border: 1px solid #393e46;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #393e46;
+  outline: 1px solid slategrey;
 }
