@@ -30,13 +30,12 @@ function main() {
 }
 
 function swap_themes() {
-    $('body').toggleClass('light_blue');
+    $('body').toggleClass('light_body');
     $('#display').toggleClass('light');
     $('#wrap').toggleClass('light');
     $('.preview_item:nth-child(even)').toggleClass('light_blue');
     $('.preview_title').toggleClass('light_title');
     $('#previews').toggleClass('light_previews');
-    $('#theme').toggleClass('light_blue');
 }
 
 function format_previews(res, output) {

@@ -21,7 +21,7 @@ html {
 
 body {
     margin: 0;
-    background-color: #222831;
+    background-color: #181c22;
 }
 
     .light_blue {
@@ -38,10 +38,8 @@ body {
         color: #222831 !important;
     }
 
-
-
-    .light_button {
-        background-color: #d6e5fa !important;
+    .light_body {
+        background-color: #bfd7f7 !important;
     }
 
 p {
@@ -64,7 +62,6 @@ h2 {
     text-transform: uppercase;
     font-size: 24pt;
 }
-
 
 #wrap {
     display: flex;
@@ -110,7 +107,7 @@ div.preview_item:nth-child(even) {
 
 .close, #theme {
     float: right;
-    background-color: #222831;
+    background-color: #00aaff;
     border: none;
     color: #fff;
     text-align: center;
@@ -132,6 +129,8 @@ div.preview_item:nth-child(even) {
 }
 
 #theme {
+    position: fixed;
+    right: 0;
     width: auto;
     font-weight: 700;
     font-size: 24pt;
