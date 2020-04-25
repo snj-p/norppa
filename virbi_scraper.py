@@ -26,7 +26,7 @@ output = []
 introtext = ["Data kaavittu VAMKin Rekrypankista: http://www.cc.puv.fi/~arsj/Rekrypankkiexcel.htm Scraper toteutettu Pythonin Requests ja BeautifulSoup-kirjastoilla, front-endissä taas esiintyy jQuery ja axios."]
 timestamp = datetime.now()
 timestampstr = timestamp.strftime("%b %d %Y")
-intro = [["Virbi Is a", "Recruitment Bank", "VIRBI", introtext , timestampstr, "Päivitetty viimeksi", "Improvement"]]
+intro = [["Virbi Is a", "Recruitment Bank", "Virbi", introtext , timestampstr, "Päivitetty viimeksi", "Improvement"]]
 
 get_data(header_rows, headers)
 get_data(rows, data)

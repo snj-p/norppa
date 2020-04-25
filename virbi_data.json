@@ -2,12 +2,12 @@
     {
         "Hakuaika p\u00e4\u00e4ttyy": "Improvement", 
         "Ilmoitan": "Virbi Is a", 
-        "Ilmoituksen otsikko": "VIRBI", 
+        "Ilmoituksen otsikko": "Virbi", 
         "Kuvaus teht\u00e4v\u00e4st\u00e4": [
             "Data kaavittu VAMKin Rekrypankista: http://www.cc.puv.fi/~arsj/Rekrypankkiexcel.htm Scraper toteutettu Pythonin Requests ja BeautifulSoup-kirjastoilla, front-endiss\u00e4 taas esiintyy jQuery ja axios."
         ], 
         "Ohjeet hakemiseen ja  lis\u00e4tietojen antaja": "P\u00e4ivitetty viimeksi", 
-        "Vaatimukset hakijalle": "Apr 21 2020", 
+        "Vaatimukset hakijalle": "Apr 25 2020", 
         "Yritys/organisaatio": "Recruitment Bank"
     }, 
     {
