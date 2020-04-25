@@ -5,19 +5,22 @@ const display = $('#display')[0];
 $(document).ready(main());
 
 function main() {
+    let selection;
+
     axios.get('virbi_data.json') 
         .then(function(response)  { 
             format_previews(response.data, previews);         
-            console.log(response.status);
 
             $('.preview_item').on('click', function() {
-                format_display(response.data, display, $('.preview_item').index(this));
+                selection = this;
+                format_display(response.data, display, $('.preview_item').index(selection));
                 $(display).css({'display':'block'});
                 if (touchDevice) $(previews).css({'display':'none'});
 
                 $('button.close').on('click', function() {
                     $(display).css({'display':'none'});
                     $(previews).css({'display':'block'});
+                    if (touchDevice) selection.scrollIntoView(true);
                 });
             });
         })
@@ -29,7 +32,7 @@ function main() {
 
 function format_previews(res, output) {
     for (i in res) {
-    var item = "<div class='preview_item'>";
+    let item = "<div class='preview_item'>";
         item += "<h4 class='preview_title'>" + res[i]["Ilmoituksen otsikko"] + "</h4>";
         item += "<p><span class='type'>" + res[i]["Ilmoitan"] + "</span> ";
         item += res[i]["Yritys/organisaatio"] + " &mdash; ";
