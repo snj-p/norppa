@@ -87,9 +87,10 @@ div.preview_item:nth-child(even) {
 }
 
 .close {
+    margin: 0 auto;
     background-color: #00aaff;
     border: none;
-    color: #fff;
+    border-radius: 50%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -97,9 +98,11 @@ div.preview_item:nth-child(even) {
     font-weight: 700;
     height: 2em;
     width: 2em;
+    cursor: pointer;
+    padding: 1px 6px 2px 6px;
 }
 
-.close:after {
+.close:before {
     content: "\00d7";
     display: inline-block;
 }
