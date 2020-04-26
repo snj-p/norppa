@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 823px) {
     div#previews {
         width: 100%;
         border: none;
@@ -24,12 +24,10 @@ body {
     background-color: #181c22;
 }
 
-p {
+p, h4 {
     margin: 0;
-}
-
-h4 {
-    margin: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 h4.preview_title {

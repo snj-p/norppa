@@ -1,4 +1,4 @@
-const touchDevice = ('ontouchstart' in document.documentElement);
+const touchDevice =  window.matchMedia("only screen and (max-width: 823px)").matches;
 const previews = $('#previews')[0];
 const display = $('#display')[0];
 
