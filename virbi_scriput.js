@@ -53,6 +53,7 @@ function format_display(res, output, index) {
         item += "<br>";
         item += "<p>" + res[index]["Ohjeet hakemiseen ja  lis\u00e4tietojen antaja"] + "</p>";
         item += "<br>";
+        item += "<strong>Vaatimukset hakijalle: </strong>"
         item += "<p>" + res[index]["Vaatimukset hakijalle"] + "</p>";
         output.innerHTML = item;
 }
