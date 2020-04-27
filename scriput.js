@@ -33,6 +33,9 @@ function main() {
 function format_previews(res, output) {
     for (i in res) {
         let type = res[i]["Ilmoitan"];
+        let title = res[i]["Ilmoituksen otsikko"];
+        let co = res[i]["Yritys/organisaatio"];
+        let due = res[i]["Hakuaika p\u00e4\u00e4ttyy"];
         let type_span = "<span>";
 
         if (type == "Opinnäytetyöpaikka")       { type_span = "<span class='type1'>" }
@@ -41,28 +44,36 @@ function format_previews(res, output) {
         else if (type == "Harjoittelupaikka")   { type_span = "<span class='type4'>" };
 
     let item = "<div class='preview_item'>";
-        item += "<h4 class='preview_title'>" + res[i]["Ilmoituksen otsikko"] + "</h4>";
-        
-        item += "<p>" + type_span + type + "</span></p> ";
-        item += "<p>" + res[i]["Yritys/organisaatio"] + " &mdash; ";
-        item += res[i]["Hakuaika p\u00e4\u00e4ttyy"] + "</p>";
+        if (title) item += "<h4 class='preview_title'>" + title + "</h4>";
+        if (type) item += "<p>" + type_span + type + "</span></p> ";
+        if (co) item += "<p>" + co + " &mdash; ";
+        if (due) item += due + "</p>";
         item += "</div>";
         output.innerHTML += item;
     }
 }
 
 function format_display(res, output, index) {
+    let type = res[index]["Ilmoitan"];
+    let title = res[index]["Ilmoituksen otsikko"];
+    let co = res[index]["Yritys/organisaatio"];
+    let due = res[index]["Hakuaika p\u00e4\u00e4ttyy"];
+    let desc = res[index]["Kuvaus teht\u00e4v\u00e4st\u00e4"];
+    let addt = res[index]["Ohjeet hakemiseen ja  lis\u00e4tietojen antaja"];
+    let req = res[index]["Vaatimukset hakijalle"];
+
     let item = '<button class="close"></button>';
-        item += "<h2>" + res[index]["Ilmoituksen otsikko"] + "</h2>";
-        item += "<h4>" + res[index]["Ilmoitan"] + " &mdash; ";
-        item += res[index]["Yritys/organisaatio"] + " &mdash; ";
-        item += res[index]["Hakuaika p\u00e4\u00e4ttyy"] + "</h4>";
+        if (title) item += "<h2>" + title + "</h2>";
+        if (type) item += "<h4>" + type + " &mdash; ";
+        if (co) item += co + " &mdash; ";
+        if (due) item += due + "</h4>";
         item += "<br>";
-        item += "<p>" + res[index]["Kuvaus teht\u00e4v\u00e4st\u00e4"] + "</p>";
+        if (desc) item += "<p>" + desc + "</p>";
         item += "<br>";
-        item += "<p>" + res[index]["Ohjeet hakemiseen ja  lis\u00e4tietojen antaja"] + "</p>";
+        if (addt) item += "<p>" + addt + "</p>";
         item += "<br>";
-        item += "<h4>Vaatimukset hakijalle: </h4>"
-        item += "<p>" + res[index]["Vaatimukset hakijalle"] + "</p>";
+        if (req) { 
+            item += "<h4>Vaatimukset hakijalle: </h4>"
+            item += "<p>" + req + "</p>"; }
         output.innerHTML = item;
 }

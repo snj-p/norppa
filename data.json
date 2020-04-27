@@ -1,14 +1,14 @@
 [
     {
-        "Hakuaika p\u00e4\u00e4ttyy": "Apr 27 2020", 
-        "Ilmoitan": "on rekrypankkia pirist\u00e4v\u00e4 adaptaatio", 
-        "Ilmoituksen otsikko": "norppa", 
-        "Kuvaus teht\u00e4v\u00e4st\u00e4": [
-            "<img src='norppa.svg'><p>Data kaavittu VAMKin Rekrypankista: http://www.cc.puv.fi/~arsj/Rekrypankkiexcel.htm Scraper toteutettu Pythonin Requests ja BeautifulSoup-kirjastoilla, front-endiss\u00e4 taas esiintyy jQuery ja axios.</p>"
+        "Hakuaika p\u00e4\u00e4ttyy": "", 
+        "Ilmoitan": "", 
+        "Ilmoituksen otsikko": "<img src='norppa.svg'>", 
+        "Kuvaus teht\u00e4v\u00e4st\u00e4": "<h4>norppa on rekrypankkia pirist\u00e4v\u00e4 adaptaatio</h4>", 
+        "Ohjeet hakemiseen ja  lis\u00e4tietojen antaja": [
+            "<p>Data kaavittu <a href='http://www.cc.puv.fi/~arsj/Rekrypankkiexcel.htm' target='blank'>VAMKin Rekrypankista</a></p><p>Scraper toteutettu Pythonin Requests ja BeautifulSoup-kirjastoilla, front-endiss\u00e4 taas esiintyy jQuery ja axios.</p>"
         ], 
-        "Ohjeet hakemiseen ja  lis\u00e4tietojen antaja": "", 
-        "Vaatimukset hakijalle": "Ei vaatimuksia :)", 
-        "Yritys/organisaatio": "P\u00e4ivitetty"
+        "Vaatimukset hakijalle": "", 
+        "Yritys/organisaatio": ""
     }, 
     {
         "Hakuaika p\u00e4\u00e4ttyy": "Jatkuva haku", 
