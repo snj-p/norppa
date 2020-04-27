@@ -7,7 +7,7 @@ $(document).ready(main());
 function main() {
     let selection;
 
-    axios.get('virbi_data.json') 
+    axios.get('data.json') 
         .then(function(response)  { 
             format_previews(response.data, previews);         
 
