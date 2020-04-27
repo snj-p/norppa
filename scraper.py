@@ -41,7 +41,7 @@ for item in intro:
     result = {i:j for i, j in zip(headers[0], item)}
     output.insert(0, result)
 
-f = open("virbi_data.json", "w+")
+f = open("data.json", "w+")
 f.write(json.dumps(output, sort_keys=True, indent=4))
 f.close()
 
