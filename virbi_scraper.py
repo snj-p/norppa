@@ -23,10 +23,10 @@ data = []
 headers = []
 output = []
 
-introtext = ["Data kaavittu VAMKin Rekrypankista: http://www.cc.puv.fi/~arsj/Rekrypankkiexcel.htm Scraper toteutettu Pythonin Requests ja BeautifulSoup-kirjastoilla, front-endissä taas esiintyy jQuery ja axios."]
+introtext = ["<img src='norppa.svg'><p>Data kaavittu VAMKin Rekrypankista: http://www.cc.puv.fi/~arsj/Rekrypankkiexcel.htm Scraper toteutettu Pythonin Requests ja BeautifulSoup-kirjastoilla, front-endissä taas esiintyy jQuery ja axios.</p>"]
 timestamp = datetime.now()
 timestampstr = timestamp.strftime("%b %d %Y")
-intro = [["Virbi Is a", "Recruitment Bank", "Virbi", introtext , timestampstr, "Päivitetty viimeksi", "Improvement"]]
+intro = [["on rekrypankkia piristävä adaptaatio", "Päivitetty", "norppa", introtext , "Ei vaatimuksia :)", "", timestampstr]]
 
 get_data(header_rows, headers)
 get_data(rows, data)

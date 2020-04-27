@@ -32,10 +32,19 @@ function main() {
 
 function format_previews(res, output) {
     for (i in res) {
+        let type = res[i]["Ilmoitan"];
+        let type_span = "<span>";
+
+        if (type == "Opinnäytetyöpaikka")       { type_span = "<span class='type1'>" }
+        else if (type == "Työpaikka")           { type_span = "<span class='type2'>" }
+        else if (type == "Kesätyöpaikka")       { type_span = "<span class='type3'>" }
+        else if (type == "Harjoittelupaikka")   { type_span = "<span class='type4'>" };
+
     let item = "<div class='preview_item'>";
         item += "<h4 class='preview_title'>" + res[i]["Ilmoituksen otsikko"] + "</h4>";
-        item += "<p><span class='type'>" + res[i]["Ilmoitan"] + "</span> ";
-        item += res[i]["Yritys/organisaatio"] + " &mdash; ";
+        
+        item += "<p>" + type_span + type + "</span></p> ";
+        item += "<p>" + res[i]["Yritys/organisaatio"] + " &mdash; ";
         item += res[i]["Hakuaika p\u00e4\u00e4ttyy"] + "</p>";
         item += "</div>";
         output.innerHTML += item;
@@ -43,7 +52,7 @@ function format_previews(res, output) {
 }
 
 function format_display(res, output, index) {
-    let item = '<div id="align_hack"><button class="close"></button></div>';
+    let item = '<button class="close"></button>';
         item += "<h2>" + res[index]["Ilmoituksen otsikko"] + "</h2>";
         item += "<h4>" + res[index]["Ilmoitan"] + " &mdash; ";
         item += res[index]["Yritys/organisaatio"] + " &mdash; ";
@@ -53,7 +62,7 @@ function format_display(res, output, index) {
         item += "<br>";
         item += "<p>" + res[index]["Ohjeet hakemiseen ja  lis\u00e4tietojen antaja"] + "</p>";
         item += "<br>";
-        item += "<strong>Vaatimukset hakijalle: </strong>"
+        item += "<h4>Vaatimukset hakijalle: </h4>"
         item += "<p>" + res[index]["Vaatimukset hakijalle"] + "</p>";
         output.innerHTML = item;
 }

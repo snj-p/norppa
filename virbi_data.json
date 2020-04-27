@@ -1,14 +1,14 @@
 [
     {
-        "Hakuaika p\u00e4\u00e4ttyy": "Improvement", 
-        "Ilmoitan": "Virbi Is a", 
-        "Ilmoituksen otsikko": "Virbi", 
+        "Hakuaika p\u00e4\u00e4ttyy": "Apr 27 2020", 
+        "Ilmoitan": "on rekrypankkia pirist\u00e4v\u00e4 adaptaatio", 
+        "Ilmoituksen otsikko": "norppa", 
         "Kuvaus teht\u00e4v\u00e4st\u00e4": [
-            "Data kaavittu VAMKin Rekrypankista: http://www.cc.puv.fi/~arsj/Rekrypankkiexcel.htm Scraper toteutettu Pythonin Requests ja BeautifulSoup-kirjastoilla, front-endiss\u00e4 taas esiintyy jQuery ja axios."
+            "<img src='norppa.svg'><p>Data kaavittu VAMKin Rekrypankista: http://www.cc.puv.fi/~arsj/Rekrypankkiexcel.htm Scraper toteutettu Pythonin Requests ja BeautifulSoup-kirjastoilla, front-endiss\u00e4 taas esiintyy jQuery ja axios.</p>"
         ], 
-        "Ohjeet hakemiseen ja  lis\u00e4tietojen antaja": "P\u00e4ivitetty viimeksi", 
-        "Vaatimukset hakijalle": "Apr 25 2020", 
-        "Yritys/organisaatio": "Recruitment Bank"
+        "Ohjeet hakemiseen ja  lis\u00e4tietojen antaja": "", 
+        "Vaatimukset hakijalle": "Ei vaatimuksia :)", 
+        "Yritys/organisaatio": "P\u00e4ivitetty"
     }, 
     {
         "Hakuaika p\u00e4\u00e4ttyy": "Jatkuva haku", 
